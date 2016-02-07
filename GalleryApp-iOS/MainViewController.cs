@@ -9,7 +9,7 @@ namespace GalleryAppiOS
 {
     public partial class MainViewController : DialogViewController
     {
-        private const string UploadUrl = "http://192.168.1.103/api/photo";
+        private const string UploadUrl = "http://realtimegallery.azurewebsites.net/api/photo";
 
         private UIImagePickerController _picker;
         private PhotoUploader _uploader;

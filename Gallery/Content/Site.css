@@ -1,13 +1,13 @@
 ﻿html {
-    background-color: #e2e2e2;
+    background-color: #000;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #fff;
+    background-color: #000;
     border-top: solid 10px #000;
-    color: #333;
+    color: #000;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #333;
+    color: #000;
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
@@ -24,7 +24,7 @@ a {
 
     a:link, a:visited,
     a:active, a:hover {
-        color: #333;
+        color: #000;
     }
 
     a:hover {
@@ -99,7 +99,7 @@ h5, h6 {
 }
 
 #body {
-    background-color: #efeeef;
+    background-color: #000;
     clear: both;
     padding-bottom: 35px;
 }
@@ -200,7 +200,7 @@ ul#menu {
         }
 
         ul#menu li a:hover {
-            color: #333;
+            color: #000;
             text-decoration: none;
         }
 
@@ -390,7 +390,7 @@ aside {
 }
 
 .contact iframe {
-    border: 1px solid #333;
+    border: 1px solid #000;
     margin: 5px 0 0 10px;
 }
 
@@ -427,7 +427,7 @@ label.checkbox {
 input, textarea {
     border: 1px solid #e2e2e2;
     background: #fff;
-    color: #333;
+    color: #000;
     font-size: 1.2em;
     margin: 5px 0 6px 0;
     padding: 5px;
@@ -547,7 +547,7 @@ th {
     }
 
     th a:link, th a:visited, th a:active, th a:hover {
-        color: #333;
+        color: #000;
         font-weight: 600;
         text-decoration: none;
         padding: 0;
@@ -633,7 +633,7 @@ tr.pager td {
         }
 
         #login a:hover {
-            color: #333;
+            color: #000;
         }
 
     /* menu */

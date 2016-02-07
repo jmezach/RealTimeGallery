@@ -7,7 +7,7 @@ namespace GalleryApp.Core
 {
     public class PhotoListener
     {
-        private const string Url = "http://192.168.1.103/signalr";
+        private const string Url = "http://realtimegallery.azurewebsites.net/signalr";
         private HubConnection _connection;
         private IHubProxy _proxy;
 
