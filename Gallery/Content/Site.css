@@ -7,7 +7,7 @@
 body {
     background-color: #000;
     border-top: solid 10px #000;
-    color: #000;
+    color: #fff;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     margin: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #000;
+    color: #fff;
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
@@ -24,7 +24,7 @@ a {
 
     a:link, a:visited,
     a:active, a:hover {
-        color: #000;
+        color: #fff;
     }
 
     a:hover {
@@ -60,7 +60,7 @@ mark {
 
 h1, h2, h3,
 h4, h5, h6 {
-    color: #000;
+    color: #fff;
     margin-bottom: 0;
     padding-bottom: 0;
 }

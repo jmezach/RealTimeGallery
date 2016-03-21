@@ -38,7 +38,7 @@ namespace Gallery.Controllers
         {
             var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("CloudStorageConnectionString"));
             var blobClient = storageAccount.CreateCloudBlobClient();
-            var container = blobClient.GetContainerReference("weddingpictures");
+            var container = blobClient.GetContainerReference("realtimephotogallery");
 
             container.CreateIfNotExists();
 
