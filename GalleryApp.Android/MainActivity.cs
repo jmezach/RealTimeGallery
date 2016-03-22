@@ -1,8 +1,5 @@
 ﻿using System;
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.Media;
@@ -45,10 +42,18 @@ namespace GalleryApp.Android
                 using (var memoryStream = new MemoryStream())
                 using (var fileStream = file.GetStream())
                 {
-                    await fileStream.CopyToAsync(memoryStream);
+                    try
+                    {
+                        await fileStream.CopyToAsync(memoryStream);
 
-                    var photoUploader = new PhotoUploader();
-                    await photoUploader.UploadPhoto(memoryStream.GetBuffer(), ".jpg");
+                        var photoUploader = new PhotoUploader();
+                        await photoUploader.UploadPhoto(memoryStream.GetBuffer(), ".jpg");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                        Toast.MakeText(this, "Something went wrong while uploading picture.", ToastLength.Long);
+                    }
                 }
 
                 Toast.MakeText(this, "Picture uploaded.", ToastLength.Short);
